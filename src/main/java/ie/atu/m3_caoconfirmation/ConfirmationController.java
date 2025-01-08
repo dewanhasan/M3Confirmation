@@ -12,7 +12,7 @@ public class ConfirmationController {
 
     @PostMapping("/confirm")
     public Map<String, String> confirmStudent(@RequestBody StudentCourseRequest studentCourseRequest) {
-        System.out.println("Student Details with selected courses: " + studentCourseRequest.getStudentDetails() + " || "
+        System.out.println("Confirmed Student Details with selected courses: " + studentCourseRequest.getStudentDetails() + " || "
                 + studentCourseRequest.getCourseList());
         Map<String, String> response = new HashMap<>();
         response.put("status", "CAO application confirmed");
